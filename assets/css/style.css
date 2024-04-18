@@ -595,6 +595,7 @@ main{
     display: flex;
     justify-content: space-between;
 }
+/* phần other projects */
 /* phần slider */
 .slider{
     height: 500px;
@@ -674,16 +675,18 @@ main{
 .other-projects .infor .desc{
     width: 300px;
 }
-/* phần other projects */
+
 #next,#prev{
     cursor: pointer;
     transition-duration: 0.5s;
 }
 #next:hover{
     transform: translateX(10px);
+    background-color: #fff;
 }
 #prev:hover{
     transform: translateX(-10px) ;
+    background-color: #fff;
 }
 /* phần engineer */
 .engineer{
