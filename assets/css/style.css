@@ -685,3 +685,60 @@ main{
 #prev:hover{
     transform: translateX(-10px) ;
 }
+/* phần engineer */
+.engineer{
+    margin-top: 100px;
+}
+.engineer-slide{
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+
+}
+.box-engineer{
+    width: 300px;
+    height: 400px;
+    background-color:rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    animation: slide-run 10s linear infinite;
+}
+.box-engineer:hover{
+    background-color: #f4ecec6d;
+    cursor: pointer;
+}
+.engineer-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 1s;
+}
+.engineer-img:hover{
+    transform: scale(1.3);
+}
+.engineer-infor{
+    width: 300px;
+    text-align: center;
+    line-height: 1.5;
+}
+.engineer-name{
+    font-size: 2rem;
+}
+.engineer-introduce{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+@keyframes slide-run {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-600px);
+    }
+    
+}
