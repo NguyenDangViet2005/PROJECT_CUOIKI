@@ -5,18 +5,6 @@ var menu = document.getElementById('menu');
         menu.addEventListener('click', function() {
             submenu.classList.toggle('open');
         });
-// phần video
-document.addEventListener('DOMContentLoaded', function() {
-    var video = document.querySelector('.video');
-    
-    video.addEventListener('mouseenter', function() {
-        video.play();
-    });
-
-    video.addEventListener('mouseleave', function() {
-        video.pause();
-    });
-});
 //phần view more
 var viewmoreBtn = document.querySelector(".view-more");
 var currentBox = 6;

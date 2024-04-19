@@ -445,6 +445,7 @@ main{
 }
 .view-more-btn:hover{
     transform: translateY(10px);
+    cursor: pointer;
 }
 
 /* phần neighborhood */
