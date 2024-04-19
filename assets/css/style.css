@@ -9,7 +9,8 @@ html{
 
 body{
     font-size: 1.6rem;
-    font-family: "Be Vietnam Pro", sans-serif;  
+    font-family: "Be Vietnam Pro", sans-serif;
+    
 }
 .main-content{
     width: 1270px;
@@ -204,7 +205,7 @@ nav{
     margin-top: 50px;
     width: 100%;
     height: 500px;
-  }  
+}  
 .background-image {
     position: absolute;
     top: 0;
@@ -218,17 +219,13 @@ nav{
   } 
 .img-item{
     position: absolute;
-    top: 40%;
-    left: 10%;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-.img-item:hover{
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
 }
 .img-item *{
     width: 200px;
@@ -801,7 +798,6 @@ main{
 .tech-item:nth-child(n+6){
     left: calc(50% + 660px);
     display: none;
-    /* opacity: 0; */
 }
 .tech-item .tech-content{
     position: absolute;
