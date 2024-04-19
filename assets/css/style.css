@@ -9,8 +9,7 @@ html{
 
 body{
     font-size: 1.6rem;
-    font-family: "Be Vietnam Pro", sans-serif;
-    
+    font-family: "Be Vietnam Pro", sans-serif;  
 }
 .main-content{
     width: 1270px;
@@ -802,6 +801,7 @@ main{
 .tech-item:nth-child(n+6){
     left: calc(50% + 660px);
     display: none;
+    /* opacity: 0; */
 }
 .tech-item .tech-content{
     position: absolute;
