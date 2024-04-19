@@ -68,3 +68,12 @@ dots.forEach((li, key) => {
         reloadslider();
     });
 });
+//tech slide
+document.getElementById('tech-next').onclick=function(){
+    let lists = document.querySelectorAll('.tech-item');
+    document.getElementById('tech-slide').appendChild(lists[0]);
+}
+document.getElementById('tech-prev').onclick=function(){
+    let lists = document.querySelectorAll('.tech-item');
+    document.getElementById('tech-slide').prepend(lists[lists.length-1]);
+}

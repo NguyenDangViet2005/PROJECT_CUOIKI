@@ -746,3 +746,141 @@ main{
     }
     
 }
+/* phần tech */
+.tech{
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+.tech h1{
+    margin-top: 50px;
+    margin-left: -140px;
+}
+#tech-slide{
+    width: 1000px;
+    height: 650px;
+    width: max-content;
+    background-color: #fff;
+    overflow: hidden;
+    
+
+}
+.tech .tech-item{
+    width: 200px;
+    height: 300px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition-duration:0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+    transform: translate(0 ,-30%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+}
+
+.tech-item:nth-child(1),
+.tech-item:nth-child(2){
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    transform: translate(0,15%);
+    width: 100%;
+    height: 605px;
+    box-shadow: none;
+}
+.tech-item:nth-child(3){
+    left: 50%;
+}
+.tech-item:nth-child(4){
+    left: calc(50% + 220px);
+}
+.tech-item:nth-child(5){
+    left: calc(50% + 440px);
+}
+.tech-item:nth-child(n+6){
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+.tech-item .tech-content{
+    position: absolute;
+    top: 60%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    font-size: 1.5rem;
+    display: none;
+    transform: translate(0 , -50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+.tech-item:nth-child(2) .tech-content{
+    display: block;
+    z-index: 2;
+}
+.tech-item .tech-name{
+    text-transform: uppercase;
+    color: orange;
+    font-size: 30px;
+    font-weight: 900;
+    opacity: 0;
+    animation: showcontent 1s ease 0s 1 forwards;
+}
+.tech-item .tech-desc{
+    opacity: 0;
+    line-height: 1.3;
+    margin: 20px 0;
+    animation: showcontent 1s ease 0.3s 1 forwards;
+    color: black;
+}
+.tech-item button{
+    padding: 10px 20px;
+    border: 0;
+    opacity: 0;
+    border-radius: 10px;
+    transition-duration:0.5s ;
+    animation: showcontent 1s ease 0.6s 1 forwards;
+}
+.tech-item button:hover{
+    cursor: pointer;
+    background-color: #f9f0f071;
+}
+@keyframes showcontent {
+    from{
+        opacity: 0;
+        transform: translate(0 , 100px);
+        filter: blur(33px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+        filter: blur(0);
+    }
+}
+.tech .buttons{
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    gap: 30px;
+}
+.tech .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition-duration: 0.5s;
+}
+.tech .buttons button:nth-child(2):hover{
+    transform: translateX(10px);
+    cursor: pointer;
+}
+.tech .buttons button:nth-child(1):hover{
+    transform: translateX(-10px);
+    cursor: pointer;
+}
+
