@@ -751,6 +751,7 @@ main{
 }
 .tech h1{
     margin-top: 50px;
+    text-align: center;
 }
 #tech-slide{
     width: 1000px;
