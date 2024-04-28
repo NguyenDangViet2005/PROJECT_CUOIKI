@@ -51,15 +51,15 @@ refreshslider = setInterval(() => {
 }, 3000);
 
 function reloadslider() {
-  let checkleft = item[active].offsetLeft; //*
-  list.style.left = -checkleft + "px"; //*
+  let checkleft = item[active].offsetLeft;
+  list.style.left = -checkleft + "px";
 
   let lastActiveDot = document.querySelector(".slider .dots li.active");
   lastActiveDot.classList.remove("active");
   dots[active].classList.add("active");
 
   if (refreshslider) {
-    clearInterval(refreshslider); //*
+    clearInterval(refreshslider);
     refreshslider = setInterval(() => {
       next.click();
     }, 3000);
