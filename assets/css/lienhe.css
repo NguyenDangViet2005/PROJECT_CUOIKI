@@ -1,47 +1,47 @@
-html{
-    background-image: url(../img/background.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}         
-h1{
-    text-align: center;
+html {
+  background-image: url(../img/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-form{
-    width: 600px;
-    height: 400px;
-    text-align: center;
-    background-color: rgba(234, 236, 245, 0.537);
-    padding: 20px 0;
-    border-radius: 20px;
-    opacity: 0.5;
-    transition-duration: 0.5s;
+h1 {
+  text-align: center;
 }
-form:hover{
-    opacity: 1;
+form {
+  width: 600px;
+  height: 400px;
+  text-align: center;
+  background-color: rgba(234, 236, 245, 0.537);
+  padding: 20px 0;
+  border-radius: 20px;
+  opacity: 0.5;
+  transition-duration: 0.5s;
 }
-#name{
-    width: 95%;
-    height: 30px;
-    border-radius: 10px;
+form:hover {
+  opacity: 1;
 }
-#email,#sdt{
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-
+#name {
+  width: 95%;
+  height: 30px;
+  border-radius: 10px;
 }
-.infor{
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#email,
+#sdt {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
 }
-#message{
-    border-radius: 10px;
-    width:95%;
+.infor {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#message {
+  border-radius: 10px;
+  width: 95%;
 }

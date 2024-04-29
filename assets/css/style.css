@@ -233,7 +233,7 @@ nav {
 }
 /* phần product */
 main {
-  padding: 100px 0;
+  padding: 100px 0 0;
   background: rgba(5, 5, 5, 0.3);
   width: 1440px;
   margin: 0 auto;
@@ -874,7 +874,10 @@ main {
   margin-top: 100px;
   background-color: #505050;
   padding: 20px 0;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+}
+#review h2 {
+  margin-left: 80px;
 }
 #review .customer {
   display: grid;
@@ -966,5 +969,191 @@ main {
 }
 .review-view-more-btn:hover {
   transform: translateY(10px);
+  cursor: pointer;
+}
+/* phần card */
+.card {
+  display: flex;
+  padding: 100px 0 100px;
+  justify-content: space-evenly;
+  background-color: #2c2b2b;
+}
+.card .message {
+  width: 500px;
+}
+.card .question {
+  font-size: 5rem;
+  font-weight: 700;
+  color: orange;
+  margin-bottom: 30px;
+}
+.card .thank {
+  line-height: 1.3;
+  color: #a49c9c;
+  width: 400px;
+}
+.card .getInfor {
+  position: relative;
+}
+.card .getInfor input,
+.card .getInfor select {
+  font-size: 2rem;
+  height: 40px;
+  width: 250px;
+  background: #2c2b2b;
+  color: white;
+  margin: 8px;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #787777;
+}
+.card .getInfor label {
+  color: #787777;
+  user-select: none;
+  pointer-events: none;
+}
+.card .getInfor .name-lb {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition-duration: 0.5s;
+}
+#name:not(:placeholder-shown) + .name-lb,
+#name:focus + .name-lb {
+  top: 0px;
+  color: #fff;
+  background-color: #2c2b2b;
+}
+.card .getInfor .email-lb {
+  position: absolute;
+  top: 20px;
+  right: 135px;
+  transition-duration: 0.5s;
+}
+#email:not(:placeholder-shown) + .email-lb,
+#email:focus + .email-lb {
+  top: 0px;
+  color: #fff;
+  background-color: #2c2b2b;
+}
+.card .getInfor .tel-lb {
+  position: absolute;
+  left: 20px;
+  top: 75px;
+  transition: 0.5s;
+}
+#tel:not(:placeholder-shown) + .tel-lb,
+#tel:focus + .tel-lb {
+  top: 58px;
+  color: #fff;
+  background-color: #2c2b2b;
+}
+#tel {
+  width: 520px;
+}
+.card .getInfor textarea {
+  width: 520px;
+  background: #2c2b2b;
+  color: #fff;
+  margin: 8px;
+  font-size: 2rem;
+  padding: 20px;
+}
+.card .getInfor .msg-lb {
+  position: absolute;
+  left: 20px;
+  top: 130px;
+  transition: 0.5s;
+}
+#yourMessage:not(:placeholder-shown) + .msg-lb,
+#yourMessage:focus + .msg-lb {
+  top: 115px;
+  color: #fff;
+  background-color: #2c2b2b;
+}
+#btn-form {
+  width: 200px;
+  background-color: #fff;
+  color: #000;
+  font-size: 2rem;
+  transition-duration: 0.5s;
+  padding: 10px 5px 10px;
+}
+#btn-form:hover {
+  background-color: orange;
+  color: #fff;
+  cursor: pointer;
+}
+/* phần footer */
+footer {
+  width: 1270px;
+  height: 400px;
+  background-color: #252323;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8c8585;
+}
+footer .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+footer .items > div {
+  width: 30%;
+  height: 100%;
+}
+footer .items .label {
+  width: 40%;
+  text-align: center;
+}
+footer .items .left > p {
+  font-size: 2rem;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+footer .items h2 {
+  color: orange;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+footer .items .center .contact-me {
+  font-size: 2rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+footer .items .center .address {
+  display: flex;
+  gap: 10px;
+}
+
+footer .items .center .phone {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+footer .items .center .mail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+footer .items .right .icon {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+}
+footer .items .right .icon i {
+  font-size: 3rem;
+}
+footer .items .right .icon i:hover {
+  opacity: 0.6;
   cursor: pointer;
 }

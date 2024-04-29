@@ -1,721 +1,1225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- file reset -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- font chữ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- file style -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Dream Homes - Ngôi nhà trong mơ</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="main-content">
-            <video autoplay loop muted src="./assets/video/17224730-hd_1920_1080_30fps.mp4"></video>
-            <nav>
-                <div class="logo">
-                    <a href="#" class="icon"><img src="./assets/img/logo.png" alt=""></a>                        
-                    <p>Dream Homes</p>
+      <div class="main-content">
+        <video
+          autoplay
+          loop
+          muted
+          src="./assets/video/17224730-hd_1920_1080_30fps.mp4"
+        ></video>
+        <nav>
+          <div class="logo">
+            <a href="#" class="icon"
+              ><img src="./assets/img/logo.png" alt=""
+            /></a>
+            <p>Dream Homes</p>
+          </div>
+          <ul class="item">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="">Thông tin</a></li>
+            <li class="menu" id="menu">
+              <a href="#">Danh mục</a>
+              <div class="sub-menu-wrap" id="submenu">
+                <div class="sub-menu">
+                  <a href="#other-projects">Dự án</a>
+                  <a href="#engineer">Kỹ sư</a>
+                  <a href="#tech">Công nghệ</a>
+                  <a href="#review">Đánh giá</a>
                 </div>
-                <ul class="item">
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="">Thông tin</a></li>
-                    <li class="menu" id="menu"><a href="#">Danh mục</a>
-                        <div class="sub-menu-wrap" id="submenu">
-                            <div class="sub-menu"> 
-                                <a href="#other-projects">Dự án</a>
-                                <a href="#engineer">Kỹ sư</a>
-                                <a href="#tech">Công nghệ</a>
-                                <a href="#review">Đánh giá</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li ><a class="nav-btn" href="./htmls/lienhe.html" target="_blank">Hỗ trợ</a></li>
-                </ul>
-            </nav>
-            <section class="slogan">
-                <h1><span style="color: orange; text-transform: uppercase;">Ngôi nhà mơ ước</span> của bạn đang ở đây!</h1>
-            </section>
-            <div class="blur-bottom"></div>
-        </div>
+              </div>
+            </li>
+            <li>
+              <a class="nav-btn" href="./htmls/lienhe.html" target="_blank"
+                >Hỗ trợ</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <section class="slogan">
+          <h1>
+            <span style="color: orange; text-transform: uppercase"
+              >Ngôi nhà mơ ước</span
+            >
+            của bạn đang ở đây!
+          </h1>
+        </section>
+        <div class="blur-bottom"></div>
+      </div>
     </header>
     <main>
-        <div class="main-content">
-            <section class="demo-area">
-                <section class="demo-infor">
-                    <h1 class="title">Dự án nhà ở tại San Diego, CA, USA</h1>
-                    <p>Kiến trúc hiện đại và độc đáo: Dự án này sử dụng các nguyên liệu và phong cách kiến trúc tiên tiến nhất, tạo ra các công trình độc đáo với các đặc điểm như đường cong mềm mại, cấu trúc hình học độc đáo và kính cường lực rộng lớn tạo cảm giác mở cửa sổ cho không gian sống.</p>
-                </section>
-                <div class="img-demo">
-                    <div class="background-image"></div>
-                    <div class="img-item">
-                        <img src="./assets/img/demo4.png" alt="">
-                        <img src="./assets/img/demo1.png" alt="">
-                        <img src="./assets/img/demo2.png" alt="">
-                        <img src="./assets/img/demo3.png" alt="">
-                        <img src="./assets/img/demo5.png" alt="">
-                    </div>
-                  </div>
-            </section>
-            <section class="product">
-                <h1 class="title">Mẫu</h1>
-                <div class="filter">
-                    <ul class="option">
-                        <li>
-                            <a href="">Tất cả</a>
-                        </li>
-                        <li>
-                            <a href="">Phòng thu</a>
-                        </li>
-                        <li>
-                            <a href="">1 Phòng ngủ</a>
-                        </li>
-                        <li>
-                            <a href="">2 Phòng ngủ</a>
-                        </li>
-                    </ul>
-                    <div class="filter-btn">
-                            <div class="text">Lọc</div>
-                            <img src="./assets/img/filter_icon.svg" alt="" class="filter-icon">
-                    </div>
-                </div>
-                <div class="model">
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-top-left.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">100.000 $</div>
-                                <a href="./htmls/nhathu1.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>1 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>1 Phòng tắm</span>
-                                </div>
-                                <div class="dientich"><span >535 mét vuông</span></div>
-                            </div>
-                        </div>
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-top-right.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">390.000 $</div>
-                                <a href="./htmls/nhathu2.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>2 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>2 Phòng Tắm</span>
-                                </div>
-                                <div class="dientich"><span >1000 mét vuông</span></div>
-                            </div>
-                        </div>
-                   
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-center-left.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">153.000 $</div>
-                                <a href="./htmls/nhathu3.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>1 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>1 Phòng tắm</span>
-                                </div>
-                                <div class="dientich"><span >535 mét vuông</span></div>
-                            </div>
-                        </div>
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-center-right.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">501.000 $</div>
-                                <a href="./htmls/nhathu4.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>3 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>5 Phòng Tắm</span>
-                                </div>
-                                <div class="dientich"><span >1200 mét vuông</span></div>
-                            </div>
-                        </div>
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-bottom-left.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">200.000 $</div>
-                                <a href="./htmls/nhathu5.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>3 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>2 Phòng Tắm</span>
-                                </div>
-                                <div class="dientich"><span >600 mét vuông</span></div>
-                            </div>
-                        </div>
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-bottom-right.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">170.000 $</div>
-                                <a href="./htmls/nhathu6.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>1 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>2 Phòng Tắm</span>
-                                </div>
-                                <div class="dientich"><span >800 mét vuông</span></div>
-                            </div>
-                        </div>
-                        <!-- phần hidden -->
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-top-left.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">100.000 $</div>
-                                <a href="./htmls/nhathu1.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>1 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>1 Phòng tắm</span>
-                                </div>
-                                <div class="dientich"><span >535 mét vuông</span></div>
-                            </div>
-                        </div>
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-top-right.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">390.000 $</div>
-                                <a href="./htmls/nhathu2.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>2 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>2 Phòng Tắm</span>
-                                </div>
-                                <div class="dientich"><span >1000 mét vuông</span></div>
-                            </div>
-                        </div>
-                   
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-center-left.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">153.000 $</div>
-                                <a href="./htmls/nhathu3.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>1 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>1 Phòng tắm</span>
-                                </div>
-                                <div class="dientich"><span >535 mét vuông</span></div>
-                            </div>
-                        </div>
-                        <div class="box-model">
-                            <a href="" class="picture-of-model"><img src="./assets/img/model-center-right.png" alt="" >
-                                <img src="./assets/img/turn-left.svg" alt="" class="turn-left">
-                                <img src="./assets/img/turn-right.svg" alt="" class="turn-right">
-                            </a>
-                            <div class="cost">
-                                <div class="money">501.000 $</div>
-                                <a href="./htmls/nhathu4.html" target="_blank" class="view-details">Xem chi tiết</a>
-                            </div>
-                            <div class="condition">
-                                <div class="bed">
-                                    <img src="./assets/img/bed.svg" alt="">
-                                    <span>3 Phòng ngủ</span>
-                                </div>
-                                <div class="bath">
-                                    <img src="./assets/img/bath.svg" alt="">
-                                    <span>5 Phòng Tắm</span>
-                                </div>
-                                <div class="dientich"><span >1200 mét vuông</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="view-more">
-                        <div class="view-more-btn"><img class="view-more-btn" src="./assets/img/view-more.svg" alt=""></div>
-                        <div class="view-more-text">Xem thêm</div>
-                    </div>
-                
-            </section>
-            <section class="neighborhood">
-                <h1 class="title">Vị trí</h1>
-                <address class="location">Dream home villas San Diego, CA, USA</address>
-                <div class="map">
-                    <div class="map-img">
-                        <a href="https://www.google.com/maps/place/Dream+Homes+Team/@32.7468442,-117.1929438,17z/data=!3m2!4b1!5s0x80deab26d9e47d47:0xbe39f86d78ff0ab2!4m6!3m5!1s0x80d955a8a56dea2f:0x8e6637826b7fff8a!8m2!3d32.7468442!4d-117.1903689!16s%2Fg%2F11f1004216?hl=vi-VN&entry=ttu" target="_blank" ><img src="./assets/img/map.png" alt="" class="ggmap"></a>
-                    </div>
-                    <ul class="services">
-                        <li>
-                            <a href="">
-                                <img src="./assets/img/edu.svg" alt="" class="icon-service">
-                                <span class="text-service">Trường học</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./assets/img/hospital.svg" alt="" class="icon-service">
-                                <span class="text-service">Bệnh viện</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./assets/img/restaurant.svg" alt="" class="icon-service">
-                                <span class="text-service">Nhà hàng</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./assets/img/groceries.svg" alt="" class="icon-service">
-                                <span class="text-service">Cửa hàng</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./assets/img/piggy-bank.svg" alt="" class="icon-service">
-                                <span class="text-service">Ngân hàng</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./assets/img/gym.svg" alt="" class="icon-service">
-                                <span class="text-service">Phòng Gym</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./assets/img/police-station.svg" alt="" class="icon-service">
-                                <span class="text-service">Cảnh sát</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./assets/img/bus.svg" alt="" class="icon-service">
-                                <span class="text-service">Trạm xe buýt</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="about-us">
-                <div class="blur-left"></div>
-                <div class="blur-right"></div>
-                <section class="about">
-                    <h1 class="title">Thông tin về chúng tôi</h1>
-                    <p class="about-desc">Dream Home là một cộng đồng có cổng với vị trí tuyệt vời. Nằm ở trung tâm thành phố, bạn có thể đi bộ đến các Công viên và khu mua sắm, ăn uống và giải trí tốt nhất. Việc di chuyển xung quanh thật dễ dàng, dễ dàng tiếp cận các xa lộ, xe buýt và xe điện. . Dịch vụ giặt là có sẵn trong khuôn viên.</p>
-                    <a href="" class="btn-about">Xem thêm</a>
-                </section>
-                <section class="achievement">
-                    <section class="projects">
-                        <h1 class="number">500+</h1>
-                        <h2 class="name">Dự án</h2>
-                        <p class="achievement-desc">Hơn 500 biệt thự sang trọng cho trải nghiệm “Home Away From Home”</p>
-                    </section>
-                    <section class="locations">
-                        <h1 class="number">40+</h1>
-                        <h2 class="name">Vị trí</h2>
-                        <p class="achievement-desc">Biệt thự sang trọng, nhà nghỉ tư nhân ở khắp mọi nơi</p>
-                    </section>
-                    <section class="Help">
-                        <h1 class="number">24/7</h1>
-                        <h2 class="name">Hỗ trợ</h2>
-                        <p class="achievement-desc">Dịch vụ chăm sóc khách hàng sẵn sàng phục vụ 24/7</p>
-                    </section>
-                </section>
-            </section>
-           <div  id="other-projects">
-                
-                <div class="slider">
-                    <div class="list">
-                        <div class="list-item">
-                            <img src="./assets/img/center-1.png" alt="">
-                        </div>
-                        <div class="list-item">
-                            <img src="./assets/img/center-2.png" alt="">
-                        </div><div class="list-item">
-                            <img src="./assets/img/center-3.png" alt="">
-                        </div><div class="list-item">
-                            <img src="./assets/img/center-4.png" alt="">
-                        </div><div class="list-item">
-                            <img src="./assets/img/center-5.png" alt="">
-                        </div><div class="list-item">
-                            <img src="./assets/img/center-6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
-                        <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
-                    </div>
-                    <ul class="dots">
-                        <li class="active"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="infor">
-                    <h1 class="title">Các dự án khác</h1>
-                    <div class="desc">
-                        <p><span style="font-weight: 600;">Vị trí:</span> Dự án được tọa lạc tại một vị trí thuận lợi và đắc địa trong thành phố, gần các khu trung tâm, các trục đường chính và các khu vực kinh doanh sầm uất. Điều này giúp cư dân dễ dàng tiếp cận các tiện ích xã hội và các dịch vụ thiết yếu khác.</p>
-                        <p><span style="font-weight: 600;">Kiến trúc và thiết kế:</span> Dự án được thiết kế bởi các kiến trúc sư hàng đầu, mang đến một phong cách kiến trúc hiện đại, sang trọng và tiện nghi. Các căn hộ được bố trí hợp lý, tối ưu hóa không gian sử dụng và tận dụng tối đa ánh sáng tự nhiên.</p>
-                        <p><span style="font-weight: 600;">Giá trị đầu tư:</span> Dự án là một cơ hội đầu tư hấp dẫn với tiềm năng tăng giá trị về lâu dài, bởi vị trí đắc địa, kiến trúc hiện đại và các tiện ích đẳng cấp mà nó mang lại. Đây là nơi lý tưởng cho những người muốn đầu tư vào bất động sản để tạo ra thu nhập ổn định và lâu dài.</p>
-                    </div>
-                </div>
-           </div>
-           <section id="engineer">
-                <h1 class="title">Kỹ Sư</h1>
-                <div class="engineer-slide">
-                    <div class="box-engineer">
-                        <img class="engineer-img" src="./assets/img/e1.jpg" alt="">
-                        <div class="engineer-infor">
-                            <div class="engineer-name">Nguyễn Đăng Việt</div>
-                            <div class="engineer-introduce">Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước</div>
-                        </div>
-                    </div>
-                    <div class="box-engineer">
-                        <img class="engineer-img" src="./assets/img/e2.png" alt="">
-                        <div class="engineer-infor">
-                            <div class="engineer-name">Đoàn Xuân Song</div>
-                            <div class="engineer-introduce">Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước</div>
-                        </div>
-                    </div>
-                    <div class="box-engineer">
-                        <img class="engineer-img" src="./assets/img/e3.jpg" alt="">
-                        <div class="engineer-infor">
-                            <div class="engineer-name">Lê Ngọc Tân</div>
-                            <div class="engineer-introduce">Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước</div>
-                        </div>
-                    </div>
-                    <div class="box-engineer">
-                        <img class="engineer-img" src="./assets/img/e4.png" alt="">
-                        <div class="engineer-infor">
-                            <div class="engineer-name">Lê Viết Hoàng Thắng</div>
-                            <div class="engineer-introduce">Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước</div>
-                        </div>
-                    </div>
-                    <div class="box-engineer">
-                        <img class="engineer-img" src="./assets/img/e5.jpg" alt="">
-                        <div class="engineer-infor">
-                            <div class="engineer-name">Trần Đình Mạnh Huy</div>
-                            <div class="engineer-introduce">Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước</div>
-                        </div>
-                    </div>
-                    <div class="box-engineer">
-                        <img class="engineer-img" src="./assets/img/e6.png" alt="">
-                        <div class="engineer-infor">
-                            <div class="engineer-name">Đặng Thanh Vũ</div>
-                            <div class="engineer-introduce">Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước</div>
-                        </div>
-                    </div>
-                </div>
-           </section>
-           <section class="tech" id="tech">
-            <h1 class="title">Công nghệ và trang thiết bị</h1>
-                <div id="tech-slide">
-                    <div class="tech-item" style="background-image: url(./assets/img/tech1.jpg);">
-                        <div class="tech-content" >
-                            <div class="tech-name">Ứng dụng Công Nghệ chế tạo trước và lắp ghép Mô đun</div>
-                            <div class="tech-desc">Là chế tạo trước các thành phần cấu kiện trong nhà xưởng, sau đó vận chuyển đến địa điểm xây dựng  và lắp ráp chúng với nhau tạo thành công trình</div>
-                            <button>Xem thêm</button>
-                            </div>
-                    </div>
-                    <div class="tech-item" style="background-image: url(./assets/img/tech2.jpg);">
-                        <div class="tech-content" >
-                            <div class="tech-name">Ứng dụng BIM</div>
-                            <div class="tech-desc">Giải pháp hoàn hảo cho toàn bộ vòng đời của công trình từ thiết kế, thi công, vận hành, quản lý...</div>
-                            <button>Xem thêm</button>
-                        </div>
-                    </div>
-                    <div class="tech-item" style="background-image: url(./assets/img/tech3.jpeg);">
-                        <div class="tech-content" >
-                            <div class="tech-name">Ứng dụng vật liệu tiên tiến</div>
-                            <div class="tech-desc">Đề cập việc tiếp cận và ứng dụng nhanh nhất các thành tựu khoa học, công nghệ, quản lí  trong cuộc Cách mạng công nghiệp 4.0</div>
-                            <button>Xem thêm</button>
-                        </div>
-                    </div>
-                    <div class="tech-item" style="background-image: url(./assets/img/tech4.jpg);">
-                        <div class="tech-content" >
-                            <div class="tech-name">Công nghệ quét 3D</div>
-                            <div class="tech-desc">Scan Laser 3D ứng dụng trong các ngành xây dựng, phục chế các công trình xây dựng mang tình lịch sử & cải tạo công trình dân dụng, công nghiệp</div>
-                            <button>Xem thêm</button>
-                        </div>
-                    </div>
-                    <div class="tech-item" style="background-image: url(./assets/img/tech5.png);">
-                        <div class="tech-content" >
-                            <div class="tech-name">Công nghệ điện toán đám mây</div>
-                            <div class="tech-desc">Là các phần mềm, ứng dụng trực tuyến được sử dụng để hỗ trợ giai đoạn kế hoạch, quản lí vật tư, tiến bộ thi công trên môi trường số</div>
-                            <button>Xem thêm</button>
-                        </div>
-                    </div>
-                    <div class="tech-item" style="background-image: url(./assets/img/tech6.jpg);">
-                        <div class="tech-content" >
-                            <div class="tech-name">Tự động hóa</div>
-                            <div class="tech-desc">Ứng dụng ROBOT làm việc cho con người với hiệu suất làm việc liên tục, với độ chính xác rất cao</div>
-                            <button>Xem thêm</button>
-                        </div>
-                    </div>
-                    <div class="tech-item" style="background-image: url(./assets/img/tech7.jpg);">
-                        <div class="tech-content" >
-                            <div class="tech-name">IoT</div>
-                            <div class="tech-desc">Sử dụng internet vạn vật cung cấp các dịch vụ thông minh</div>
-                            <button>Xem thêm</button>
-                        </div>
-                    </div>
-                    <div class="tech-item" style="background-image: url(./assets/img/tech8.jpg);">
-                        <div class="tech-content" >
-                            <div class="tech-name">Công nghệ thực tế ảo & thực tế tăng cường (VA & AR)</div>
-                            <div class="tech-desc">Hỗ trợ trải nghiệm và tương tác, đánh giá các mẫu thiết kế khác nhau vào trong không gian thực hoặc đặt thử vào các vị trí thiết kế để có sự lựa chọn tốt nhất </div>
-                            <button>Xem thêm</button>
-                        </div>
-                    </div>
-                    <div class="tech-item" style="background-image: url(./assets/img/tech9.webp);">
-                        <div class="tech-content" >
-                            <div class="tech-name">Big Data</div>
-                            <div class="tech-desc">Ứng dụng dữ liệu lớn trong mọi hoạt động thiết kế, xây dựng và vận hành các dự án</div>
-                            <button>Xem thêm</button>
-                        </div> 
-                    </div>
-                    </div>
-                    <div class="buttons">
-                        <button id="tech-prev"><i class="fa-solid fa-chevron-left"></i></button>
-                        <button id="tech-next"><i class="fa-solid fa-chevron-right"></i></button>
-                    </div>
-                </div>
-           </section>
-           <section id="review">
-            <div class="main-content">
-                <h2 class="title">Đánh giá của khách hàng</h2>
-                <div class="customer">
-                    <div class="user">
-                        <img src="./assets/img/e1.jpg" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Nguyễn Đăng Việt</div>
-                                <div class="comment-date">2 tuần trước</div>
-                            </div>
-                            <div class="star">5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Nơi lý tưởng để thư giãn và thư thái, không gian sạch sẽ và yên bình</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e2.png" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Đoàn Xuân Song</div>
-                                <div class="comment-date">4 tháng trước</div>
-                            </div>
-                            <div class="star">4.5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Nhà có thiết kế thông minh và tiện nghi, tạo cảm giác ấm cúng và thoải mái.</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e3.jpg" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Lê Ngọc Tân</div>
-                                <div class="comment-date">6 tháng trước</div>
-                            </div>
-                            <div class="star">5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Môi trường sống an ninh và gần các tiện ích cần thiết như siêu thị và trường học</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e4.png" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Lê Viết Hoàng Thắng</div>
-                                <div class="comment-date">7 tháng trước</div>
-                            </div>
-                            <div class="star">5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Giao thông thuận tiện, dễ dàng di chuyển đến trung tâm thành phố và các khu vực lân cận</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e5.jpg" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Trần Đình Mạnh Huy</div>
-                                <div class="comment-date">8 tháng trước</div>
-                            </div>
-                            <div class="star">4.5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Dịch vụ quản lý nhà chuyên nghiệp và nhanh nhẹn, giải quyết các vấn đề nhanh chóng.</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e6.png" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Đặng Thanh Vũ</div>
-                                <div class="comment-date">1 năm trước</div>
-                            </div>
-                            <div class="star">5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Cộng đồng hàng xóm thân thiện và hòa đồng, tạo cảm giác gia đình và gắn kết</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e1.jpg" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Nguyễn Đăng Việt</div>
-                                <div class="comment-date">2 tuần trước</div>
-                            </div>
-                            <div class="star">5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Nơi lý tưởng để thư giãn và thư thái, không gian sạch sẽ và yên bình</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e2.png" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Đoàn Xuân Song</div>
-                                <div class="comment-date">4 tháng trước</div>
-                            </div>
-                            <div class="star">4.5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Nhà có thiết kế thông minh và tiện nghi, tạo cảm giác ấm cúng và thoải mái.</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e3.jpg" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Lê Ngọc Tân</div>
-                                <div class="comment-date">6 tháng trước</div>
-                            </div>
-                            <div class="star">5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Môi trường sống an ninh và gần các tiện ích cần thiết như siêu thị và trường học</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e4.png" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Lê Viết Hoàng Thắng</div>
-                                <div class="comment-date">7 tháng trước</div>
-                            </div>
-                            <div class="star">5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Giao thông thuận tiện, dễ dàng di chuyển đến trung tâm thành phố và các khu vực lân cận</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e5.jpg" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Trần Đình Mạnh Huy</div>
-                                <div class="comment-date">8 tháng trước</div>
-                            </div>
-                            <div class="star">4.5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Dịch vụ quản lý nhà chuyên nghiệp và nhanh nhẹn, giải quyết các vấn đề nhanh chóng.</div>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <img src="./assets/img/e6.png" alt="" class="user-ava">
-                        <div class="user-review">
-                            <div class="user-infor">
-                                <div class="user-name">Đặng Thanh Vũ</div>
-                                <div class="comment-date">1 năm trước</div>
-                            </div>
-                            <div class="star">5<i class="fa-solid fa-star"></i></div>
-                            <div class="user-comment">Cộng đồng hàng xóm thân thiện và hòa đồng, tạo cảm giác gia đình và gắn kết</div>
-                        </div>
-                    </div>  
-                </div>
-                <div class="review-view-more">
-                    <div class="review-view-more-btn"><img class="view-more-btn" src="./assets/img/view-more.svg" alt=""></div>
-                    <div class="review-view-more-text">Xem thêm</div>
-                </div>
+      <div class="main-content">
+        <section class="demo-area">
+          <section class="demo-infor">
+            <h1 class="title">Dự án nhà ở tại San Diego, CA, USA</h1>
+            <p>
+              Kiến trúc hiện đại và độc đáo: Dự án này sử dụng các nguyên liệu
+              và phong cách kiến trúc tiên tiến nhất, tạo ra các công trình độc
+              đáo với các đặc điểm như đường cong mềm mại, cấu trúc hình học độc
+              đáo và kính cường lực rộng lớn tạo cảm giác mở cửa sổ cho không
+              gian sống.
+            </p>
+          </section>
+          <div class="img-demo">
+            <div class="background-image"></div>
+            <div class="img-item">
+              <img src="./assets/img/demo4.png" alt="" />
+              <img src="./assets/img/demo1.png" alt="" />
+              <img src="./assets/img/demo2.png" alt="" />
+              <img src="./assets/img/demo3.png" alt="" />
+              <img src="./assets/img/demo5.png" alt="" />
             </div>
-           </section>
-        </div>
+          </div>
+        </section>
+        <section class="product">
+          <h1 class="title">Mẫu</h1>
+          <div class="filter">
+            <ul class="option">
+              <li>
+                <a href="">Tất cả</a>
+              </li>
+              <li>
+                <a href="">Phòng thu</a>
+              </li>
+              <li>
+                <a href="">1 Phòng ngủ</a>
+              </li>
+              <li>
+                <a href="">2 Phòng ngủ</a>
+              </li>
+            </ul>
+            <div class="filter-btn">
+              <div class="text">Lọc</div>
+              <img
+                src="./assets/img/filter_icon.svg"
+                alt=""
+                class="filter-icon"
+              />
+            </div>
+          </div>
+          <div class="model">
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-top-left.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">100.000 $</div>
+                <a
+                  href="./htmls/nhathu1.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>1 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>1 Phòng tắm</span>
+                </div>
+                <div class="dientich"><span>535 mét vuông</span></div>
+              </div>
+            </div>
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-top-right.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">390.000 $</div>
+                <a
+                  href="./htmls/nhathu2.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>2 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>2 Phòng Tắm</span>
+                </div>
+                <div class="dientich"><span>1000 mét vuông</span></div>
+              </div>
+            </div>
+
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-center-left.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">153.000 $</div>
+                <a
+                  href="./htmls/nhathu3.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>1 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>1 Phòng tắm</span>
+                </div>
+                <div class="dientich"><span>535 mét vuông</span></div>
+              </div>
+            </div>
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-center-right.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">501.000 $</div>
+                <a
+                  href="./htmls/nhathu4.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>3 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>5 Phòng Tắm</span>
+                </div>
+                <div class="dientich"><span>1200 mét vuông</span></div>
+              </div>
+            </div>
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-bottom-left.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">200.000 $</div>
+                <a
+                  href="./htmls/nhathu5.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>3 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>2 Phòng Tắm</span>
+                </div>
+                <div class="dientich"><span>600 mét vuông</span></div>
+              </div>
+            </div>
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-bottom-right.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">170.000 $</div>
+                <a
+                  href="./htmls/nhathu6.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>1 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>2 Phòng Tắm</span>
+                </div>
+                <div class="dientich"><span>800 mét vuông</span></div>
+              </div>
+            </div>
+            <!-- phần hidden -->
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-top-left.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">100.000 $</div>
+                <a
+                  href="./htmls/nhathu1.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>1 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>1 Phòng tắm</span>
+                </div>
+                <div class="dientich"><span>535 mét vuông</span></div>
+              </div>
+            </div>
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-top-right.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">390.000 $</div>
+                <a
+                  href="./htmls/nhathu2.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>2 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>2 Phòng Tắm</span>
+                </div>
+                <div class="dientich"><span>1000 mét vuông</span></div>
+              </div>
+            </div>
+
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-center-left.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">153.000 $</div>
+                <a
+                  href="./htmls/nhathu3.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>1 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>1 Phòng tắm</span>
+                </div>
+                <div class="dientich"><span>535 mét vuông</span></div>
+              </div>
+            </div>
+            <div class="box-model">
+              <a href="" class="picture-of-model"
+                ><img src="./assets/img/model-center-right.png" alt="" />
+                <img
+                  src="./assets/img/turn-left.svg"
+                  alt=""
+                  class="turn-left"
+                />
+                <img
+                  src="./assets/img/turn-right.svg"
+                  alt=""
+                  class="turn-right"
+                />
+              </a>
+              <div class="cost">
+                <div class="money">501.000 $</div>
+                <a
+                  href="./htmls/nhathu4.html"
+                  target="_blank"
+                  class="view-details"
+                  >Xem chi tiết</a
+                >
+              </div>
+              <div class="condition">
+                <div class="bed">
+                  <img src="./assets/img/bed.svg" alt="" />
+                  <span>3 Phòng ngủ</span>
+                </div>
+                <div class="bath">
+                  <img src="./assets/img/bath.svg" alt="" />
+                  <span>5 Phòng Tắm</span>
+                </div>
+                <div class="dientich"><span>1200 mét vuông</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="view-more">
+            <div class="view-more-btn">
+              <img
+                class="view-more-btn"
+                src="./assets/img/view-more.svg"
+                alt=""
+              />
+            </div>
+            <div class="view-more-text">Xem thêm</div>
+          </div>
+        </section>
+        <section class="neighborhood">
+          <h1 class="title">Vị trí</h1>
+          <address class="location">
+            Dream home villas San Diego, CA, USA
+          </address>
+          <div class="map">
+            <div class="map-img">
+              <a
+                href="https://www.google.com/maps/place/Dream+Homes+Team/@32.7468442,-117.1929438,17z/data=!3m2!4b1!5s0x80deab26d9e47d47:0xbe39f86d78ff0ab2!4m6!3m5!1s0x80d955a8a56dea2f:0x8e6637826b7fff8a!8m2!3d32.7468442!4d-117.1903689!16s%2Fg%2F11f1004216?hl=vi-VN&entry=ttu"
+                target="_blank"
+                ><img src="./assets/img/map.png" alt="" class="ggmap"
+              /></a>
+            </div>
+            <ul class="services">
+              <li>
+                <a href="">
+                  <img src="./assets/img/edu.svg" alt="" class="icon-service" />
+                  <span class="text-service">Trường học</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./assets/img/hospital.svg"
+                    alt=""
+                    class="icon-service"
+                  />
+                  <span class="text-service">Bệnh viện</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./assets/img/restaurant.svg"
+                    alt=""
+                    class="icon-service"
+                  />
+                  <span class="text-service">Nhà hàng</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./assets/img/groceries.svg"
+                    alt=""
+                    class="icon-service"
+                  />
+                  <span class="text-service">Cửa hàng</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./assets/img/piggy-bank.svg"
+                    alt=""
+                    class="icon-service"
+                  />
+                  <span class="text-service">Ngân hàng</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/img/gym.svg" alt="" class="icon-service" />
+                  <span class="text-service">Phòng Gym</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./assets/img/police-station.svg"
+                    alt=""
+                    class="icon-service"
+                  />
+                  <span class="text-service">Cảnh sát</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./assets/img/bus.svg" alt="" class="icon-service" />
+                  <span class="text-service">Trạm xe buýt</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="about-us">
+          <div class="blur-left"></div>
+          <div class="blur-right"></div>
+          <section class="about">
+            <h1 class="title">Thông tin về chúng tôi</h1>
+            <p class="about-desc">
+              Dream Home là một cộng đồng có cổng với vị trí tuyệt vời. Nằm ở
+              trung tâm thành phố, bạn có thể đi bộ đến các Công viên và khu mua
+              sắm, ăn uống và giải trí tốt nhất. Việc di chuyển xung quanh thật
+              dễ dàng, dễ dàng tiếp cận các xa lộ, xe buýt và xe điện. . Dịch vụ
+              giặt là có sẵn trong khuôn viên.
+            </p>
+            <a href="" class="btn-about">Xem thêm</a>
+          </section>
+          <section class="achievement">
+            <section class="projects">
+              <h1 class="number">500+</h1>
+              <h2 class="name">Dự án</h2>
+              <p class="achievement-desc">
+                Hơn 500 biệt thự sang trọng cho trải nghiệm “Home Away From
+                Home”
+              </p>
+            </section>
+            <section class="locations">
+              <h1 class="number">40+</h1>
+              <h2 class="name">Vị trí</h2>
+              <p class="achievement-desc">
+                Biệt thự sang trọng, nhà nghỉ tư nhân ở khắp mọi nơi
+              </p>
+            </section>
+            <section class="Help">
+              <h1 class="number">24/7</h1>
+              <h2 class="name">Hỗ trợ</h2>
+              <p class="achievement-desc">
+                Dịch vụ chăm sóc khách hàng sẵn sàng phục vụ 24/7
+              </p>
+            </section>
+          </section>
+        </section>
+        <section id="other-projects">
+          <div class="slider">
+            <div class="list">
+              <div class="list-item">
+                <img src="./assets/img/center-1.png" alt="" />
+              </div>
+              <div class="list-item">
+                <img src="./assets/img/center-2.png" alt="" />
+              </div>
+              <div class="list-item">
+                <img src="./assets/img/center-3.png" alt="" />
+              </div>
+              <div class="list-item">
+                <img src="./assets/img/center-4.png" alt="" />
+              </div>
+              <div class="list-item">
+                <img src="./assets/img/center-5.png" alt="" />
+              </div>
+              <div class="list-item">
+                <img src="./assets/img/center-6.png" alt="" />
+              </div>
+            </div>
+            <div class="buttons">
+              <button id="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button id="next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <ul class="dots">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="infor">
+            <h1 class="title">Các dự án khác</h1>
+            <div class="desc">
+              <p>
+                <span style="font-weight: 600">Vị trí:</span> Dự án được tọa lạc
+                tại một vị trí thuận lợi và đắc địa trong thành phố, gần các khu
+                trung tâm, các trục đường chính và các khu vực kinh doanh sầm
+                uất. Điều này giúp cư dân dễ dàng tiếp cận các tiện ích xã hội
+                và các dịch vụ thiết yếu khác.
+              </p>
+              <p>
+                <span style="font-weight: 600">Kiến trúc và thiết kế:</span> Dự
+                án được thiết kế bởi các kiến trúc sư hàng đầu, mang đến một
+                phong cách kiến trúc hiện đại, sang trọng và tiện nghi. Các căn
+                hộ được bố trí hợp lý, tối ưu hóa không gian sử dụng và tận dụng
+                tối đa ánh sáng tự nhiên.
+              </p>
+              <p>
+                <span style="font-weight: 600">Giá trị đầu tư:</span> Dự án là
+                một cơ hội đầu tư hấp dẫn với tiềm năng tăng giá trị về lâu dài,
+                bởi vị trí đắc địa, kiến trúc hiện đại và các tiện ích đẳng cấp
+                mà nó mang lại. Đây là nơi lý tưởng cho những người muốn đầu tư
+                vào bất động sản để tạo ra thu nhập ổn định và lâu dài.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="engineer">
+          <h1 class="title">Kỹ Sư</h1>
+          <div class="engineer-slide">
+            <div class="box-engineer">
+              <img class="engineer-img" src="./assets/img/e1.jpg" alt="" />
+              <div class="engineer-infor">
+                <div class="engineer-name">Nguyễn Đăng Việt</div>
+                <div class="engineer-introduce">
+                  Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước
+                </div>
+              </div>
+            </div>
+            <div class="box-engineer">
+              <img class="engineer-img" src="./assets/img/e2.png" alt="" />
+              <div class="engineer-infor">
+                <div class="engineer-name">Đoàn Xuân Song</div>
+                <div class="engineer-introduce">
+                  Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước
+                </div>
+              </div>
+            </div>
+            <div class="box-engineer">
+              <img class="engineer-img" src="./assets/img/e3.jpg" alt="" />
+              <div class="engineer-infor">
+                <div class="engineer-name">Lê Ngọc Tân</div>
+                <div class="engineer-introduce">
+                  Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước
+                </div>
+              </div>
+            </div>
+            <div class="box-engineer">
+              <img class="engineer-img" src="./assets/img/e4.png" alt="" />
+              <div class="engineer-infor">
+                <div class="engineer-name">Lê Viết Hoàng Thắng</div>
+                <div class="engineer-introduce">
+                  Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước
+                </div>
+              </div>
+            </div>
+            <div class="box-engineer">
+              <img class="engineer-img" src="./assets/img/e5.jpg" alt="" />
+              <div class="engineer-infor">
+                <div class="engineer-name">Trần Đình Mạnh Huy</div>
+                <div class="engineer-introduce">
+                  Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước
+                </div>
+              </div>
+            </div>
+            <div class="box-engineer">
+              <img class="engineer-img" src="./assets/img/e6.png" alt="" />
+              <div class="engineer-infor">
+                <div class="engineer-name">Đặng Thanh Vũ</div>
+                <div class="engineer-introduce">
+                  Kĩ sư trẻ, 21 tuổi, 4 năm kinh nghiệm từ trong và ngoài nước
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tech" id="tech">
+          <h1 class="title">Công nghệ và trang thiết bị</h1>
+          <div id="tech-slide">
+            <div
+              class="tech-item"
+              style="background-image: url(./assets/img/tech1.jpg)"
+            >
+              <div class="tech-content">
+                <div class="tech-name">
+                  Ứng dụng Công Nghệ chế tạo trước và lắp ghép Mô đun
+                </div>
+                <div class="tech-desc">
+                  Là chế tạo trước các thành phần cấu kiện trong nhà xưởng, sau
+                  đó vận chuyển đến địa điểm xây dựng và lắp ráp chúng với nhau
+                  tạo thành công trình
+                </div>
+                <button>Xem thêm</button>
+              </div>
+            </div>
+            <div
+              class="tech-item"
+              style="background-image: url(./assets/img/tech2.jpg)"
+            >
+              <div class="tech-content">
+                <div class="tech-name">Ứng dụng BIM</div>
+                <div class="tech-desc">
+                  Giải pháp hoàn hảo cho toàn bộ vòng đời của công trình từ
+                  thiết kế, thi công, vận hành, quản lý...
+                </div>
+                <button>Xem thêm</button>
+              </div>
+            </div>
+            <div
+              class="tech-item"
+              style="background-image: url(./assets/img/tech3.jpeg)"
+            >
+              <div class="tech-content">
+                <div class="tech-name">Ứng dụng vật liệu tiên tiến</div>
+                <div class="tech-desc">
+                  Đề cập việc tiếp cận và ứng dụng nhanh nhất các thành tựu khoa
+                  học, công nghệ, quản lí trong cuộc Cách mạng công nghiệp 4.0
+                </div>
+                <button>Xem thêm</button>
+              </div>
+            </div>
+            <div
+              class="tech-item"
+              style="background-image: url(./assets/img/tech4.jpg)"
+            >
+              <div class="tech-content">
+                <div class="tech-name">Công nghệ quét 3D</div>
+                <div class="tech-desc">
+                  Scan Laser 3D ứng dụng trong các ngành xây dựng, phục chế các
+                  công trình xây dựng mang tình lịch sử & cải tạo công trình dân
+                  dụng, công nghiệp
+                </div>
+                <button>Xem thêm</button>
+              </div>
+            </div>
+            <div
+              class="tech-item"
+              style="background-image: url(./assets/img/tech5.png)"
+            >
+              <div class="tech-content">
+                <div class="tech-name">Công nghệ điện toán đám mây</div>
+                <div class="tech-desc">
+                  Là các phần mềm, ứng dụng trực tuyến được sử dụng để hỗ trợ
+                  giai đoạn kế hoạch, quản lí vật tư, tiến bộ thi công trên môi
+                  trường số
+                </div>
+                <button>Xem thêm</button>
+              </div>
+            </div>
+            <div
+              class="tech-item"
+              style="background-image: url(./assets/img/tech6.jpg)"
+            >
+              <div class="tech-content">
+                <div class="tech-name">Tự động hóa</div>
+                <div class="tech-desc">
+                  Ứng dụng ROBOT làm việc cho con người với hiệu suất làm việc
+                  liên tục, với độ chính xác rất cao
+                </div>
+                <button>Xem thêm</button>
+              </div>
+            </div>
+            <div
+              class="tech-item"
+              style="background-image: url(./assets/img/tech7.jpg)"
+            >
+              <div class="tech-content">
+                <div class="tech-name">IoT</div>
+                <div class="tech-desc">
+                  Sử dụng internet vạn vật cung cấp các dịch vụ thông minh
+                </div>
+                <button>Xem thêm</button>
+              </div>
+            </div>
+            <div
+              class="tech-item"
+              style="background-image: url(./assets/img/tech8.jpg)"
+            >
+              <div class="tech-content">
+                <div class="tech-name">
+                  Công nghệ thực tế ảo & thực tế tăng cường (VA & AR)
+                </div>
+                <div class="tech-desc">
+                  Hỗ trợ trải nghiệm và tương tác, đánh giá các mẫu thiết kế
+                  khác nhau vào trong không gian thực hoặc đặt thử vào các vị
+                  trí thiết kế để có sự lựa chọn tốt nhất
+                </div>
+                <button>Xem thêm</button>
+              </div>
+            </div>
+            <div
+              class="tech-item"
+              style="background-image: url(./assets/img/tech9.webp)"
+            >
+              <div class="tech-content">
+                <div class="tech-name">Big Data</div>
+                <div class="tech-desc">
+                  Ứng dụng dữ liệu lớn trong mọi hoạt động thiết kế, xây dựng và
+                  vận hành các dự án
+                </div>
+                <button>Xem thêm</button>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button id="tech-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="tech-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+        <section id="review">
+          <div class="main-content">
+            <h2 class="title">Đánh giá của khách hàng</h2>
+            <div class="customer">
+              <div class="user">
+                <img src="./assets/img/e1.jpg" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Nguyễn Đăng Việt</div>
+                    <div class="comment-date">2 tuần trước</div>
+                  </div>
+                  <div class="star">5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Nơi lý tưởng để thư giãn và thư thái, không gian sạch sẽ và
+                    yên bình
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e2.png" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Đoàn Xuân Song</div>
+                    <div class="comment-date">4 tháng trước</div>
+                  </div>
+                  <div class="star">4.5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Nhà có thiết kế thông minh và tiện nghi, tạo cảm giác ấm
+                    cúng và thoải mái.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e3.jpg" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Lê Ngọc Tân</div>
+                    <div class="comment-date">6 tháng trước</div>
+                  </div>
+                  <div class="star">5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Môi trường sống an ninh và gần các tiện ích cần thiết như
+                    siêu thị và trường học
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e4.png" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Lê Viết Hoàng Thắng</div>
+                    <div class="comment-date">7 tháng trước</div>
+                  </div>
+                  <div class="star">5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Giao thông thuận tiện, dễ dàng di chuyển đến trung tâm thành
+                    phố và các khu vực lân cận
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e5.jpg" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Trần Đình Mạnh Huy</div>
+                    <div class="comment-date">8 tháng trước</div>
+                  </div>
+                  <div class="star">4.5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Dịch vụ quản lý nhà chuyên nghiệp và nhanh nhẹn, giải quyết
+                    các vấn đề nhanh chóng.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e6.png" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Đặng Thanh Vũ</div>
+                    <div class="comment-date">1 năm trước</div>
+                  </div>
+                  <div class="star">5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Cộng đồng hàng xóm thân thiện và hòa đồng, tạo cảm giác gia
+                    đình và gắn kết
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e1.jpg" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Nguyễn Đăng Việt</div>
+                    <div class="comment-date">2 tuần trước</div>
+                  </div>
+                  <div class="star">5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Nơi lý tưởng để thư giãn và thư thái, không gian sạch sẽ và
+                    yên bình
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e2.png" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Đoàn Xuân Song</div>
+                    <div class="comment-date">4 tháng trước</div>
+                  </div>
+                  <div class="star">4.5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Nhà có thiết kế thông minh và tiện nghi, tạo cảm giác ấm
+                    cúng và thoải mái.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e3.jpg" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Lê Ngọc Tân</div>
+                    <div class="comment-date">6 tháng trước</div>
+                  </div>
+                  <div class="star">5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Môi trường sống an ninh và gần các tiện ích cần thiết như
+                    siêu thị và trường học
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e4.png" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Lê Viết Hoàng Thắng</div>
+                    <div class="comment-date">7 tháng trước</div>
+                  </div>
+                  <div class="star">5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Giao thông thuận tiện, dễ dàng di chuyển đến trung tâm thành
+                    phố và các khu vực lân cận
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e5.jpg" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Trần Đình Mạnh Huy</div>
+                    <div class="comment-date">8 tháng trước</div>
+                  </div>
+                  <div class="star">4.5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Dịch vụ quản lý nhà chuyên nghiệp và nhanh nhẹn, giải quyết
+                    các vấn đề nhanh chóng.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <img src="./assets/img/e6.png" alt="" class="user-ava" />
+                <div class="user-review">
+                  <div class="user-infor">
+                    <div class="user-name">Đặng Thanh Vũ</div>
+                    <div class="comment-date">1 năm trước</div>
+                  </div>
+                  <div class="star">5<i class="fa-solid fa-star"></i></div>
+                  <div class="user-comment">
+                    Cộng đồng hàng xóm thân thiện và hòa đồng, tạo cảm giác gia
+                    đình và gắn kết
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-view-more">
+              <div class="review-view-more-btn">
+                <img
+                  class="view-more-btn"
+                  src="./assets/img/view-more.svg"
+                  alt=""
+                />
+              </div>
+              <div class="review-view-more-text">Xem thêm</div>
+            </div>
+          </div>
+        </section>
+        <section class="card">
+          <div class="message">
+            <p class="question">
+              Bạn đã tìm được cho mình một căn nhà mơ ước chưa?
+            </p>
+            <p class="thank">
+              Cảm ơn bạn đã ghé thăm! nếu bạn tìm thấy ngôi nhà mơ ước của mình,
+              hãy kết nối với chúng tôi
+            </p>
+          </div>
+          <div class="getInfor">
+            <form action="">
+              <input type="text" name="name" id="name" placeholder=" " />
+              <label for="name" class="name-lb">Tên của bạn</label>
+              <input type="email" name="email" id="email" placeholder=" " />
+              <label for="email" class="email-lb">Email của bạn</label>
+              <br />
+              <input type="tel" name="tel" id="tel" placeholder=" " />
+              <label for="tel" class="tel-lb">Số điện thoại</label>
+              <br />
+              <textarea
+                name="yourMessage"
+                id="yourMessage"
+                cols="41"
+                rows="10"
+                placeholder=" "
+              ></textarea>
+              <label for="yourMessage" class="msg-lb"
+                >Nhận xét về chúng tôi</label
+              >
+              <br />
+              <input type="submit" value="Gửi" id="btn-form" />
+            </form>
+          </div>
+        </section>
+      </div>
     </main>
+    <footer>
+      <div class="main-content">
+        <div class="items">
+          <div class="left">
+            <div class="label">
+              <img src="../assets/img/logo.png" alt="" />
+              <p>Dream Homes</p>
+            </div>
+            <p class="desc">
+              Dream Homes - sự lựa chọn tốt nhất giành cho bạn, sự hài lòng của
+              bạn là sự vinh hạnh của chúng tôi
+            </p>
+          </div>
+          <div class="center">
+            <h2>Liên hệ với chúng tôi</h2>
+            <div class="contact-me">
+              <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <address>Dream Home villas San Diego, CA, USA</address>
+              </div>
+              <div class="phone">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>0905507622</p>
+              </div>
+              <div class="mail">
+                <i class="fa-solid fa-envelope"></i>
+                <p>vietnguyen.1022005@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <h2>Theo dõi chúng tôi</h2>
+            <div class="icon">
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
