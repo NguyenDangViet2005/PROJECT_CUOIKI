@@ -85,7 +85,7 @@ document.getElementById("tech-prev").onclick = function () {
 var viewmoreBtnComment = document.querySelector(".review-view-more");
 var currentBoxComment = 6;
 viewmoreBtnComment.onclick = function () {
-  let boxesComment = [...document.querySelectorAll(".reviews .user")];
+  let boxesComment = [...document.querySelectorAll("#review .user")];
   for (var i = currentBoxComment; i < currentBoxComment + 2; i++) {
     boxesComment[i].style.display = "flex";
   }
