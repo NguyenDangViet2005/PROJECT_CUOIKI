@@ -1086,18 +1086,21 @@ main {
 }
 /* phần footer */
 footer {
-  width: 1270px;
+  width: 1440px;
   height: 400px;
-  background-color: #252323;
   margin: 0px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #8c8585;
 }
+footer .main-content {
+  padding: 50px;
+  background-color: #252323;
+}
 footer .items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 300px;
@@ -1107,13 +1110,14 @@ footer .items > div {
   height: 100%;
 }
 footer .items .label {
-  width: 40%;
+  width: 80%;
   text-align: center;
 }
 footer .items .left > p {
   font-size: 2rem;
   margin-top: 15px;
   line-height: 1.5;
+  width: 300px;
 }
 footer .items h2 {
   color: orange;
@@ -1151,9 +1155,29 @@ footer .items .right .icon {
   height: 90px;
 }
 footer .items .right .icon i {
-  font-size: 3rem;
+  font-size: 4rem;
 }
-footer .items .right .icon i:hover {
-  opacity: 0.6;
+#facebook {
+  transition-duration: 0.5s;
+}
+#facebook:hover {
+  color: rgb(79, 187, 242);
+  cursor: pointer;
+}
+#instagram {
+  transition-duration: 0.5s;
+}
+#instagram:hover {
+  background-image: linear-gradient(#833ab4, #fd1d1d, #fcb045);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+#twitter {
+  transition-duration: 0.5s;
+}
+#twitter:hover {
+  color: rgb(128, 133, 136);
   cursor: pointer;
 }
