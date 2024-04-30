@@ -7,13 +7,13 @@ menu.addEventListener("click", function () {
 });
 //phần view more
 var viewmoreBtn = document.querySelector(".view-more");
-var currentBox = 6;
+var currentBox = 9;
 viewmoreBtn.onclick = function () {
   let boxes = [...document.querySelectorAll(".model .box-model")];
-  for (var i = currentBox; i < currentBox + 2; i++) {
+  for (var i = currentBox; i < currentBox + 3; i++) {
     boxes[i].style.display = "inline-block";
   }
-  currentBox += 2;
+  currentBox += 3;
   if (currentBox >= boxes.length) {
     viewmoreBtn.style.display = "none";
   }
@@ -80,17 +80,4 @@ document.getElementById("tech-next").onclick = function () {
 document.getElementById("tech-prev").onclick = function () {
   let lists = document.querySelectorAll(".tech-item");
   document.getElementById("tech-slide").prepend(lists[lists.length - 1]);
-};
-//view more comment
-var viewmoreBtnComment = document.querySelector(".review-view-more");
-var currentBoxComment = 6;
-viewmoreBtnComment.onclick = function () {
-  let boxesComment = [...document.querySelectorAll("#review .user")];
-  for (var i = currentBoxComment; i < currentBoxComment + 2; i++) {
-    boxesComment[i].style.display = "flex";
-  }
-  currentBoxComment += 2;
-  if (currentBoxComment >= boxesComment.length) {
-    viewmoreBtnComment.style.display = "none";
-  }
 };
