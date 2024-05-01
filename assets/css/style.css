@@ -1058,7 +1058,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #252323;
+  background-color: #2523236b;
+  color: #ffffff;
+  position: relative;
+}
+footer > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
 }
 footer .items {
   display: flex;
@@ -1088,6 +1099,7 @@ footer .items h2 {
   justify-content: center;
   align-items: center;
   height: 80px;
+  text-transform: uppercase;
 }
 footer .items .center .contact-me {
   font-size: 2rem;
@@ -1098,16 +1110,24 @@ footer .items .center .address {
   display: flex;
   gap: 10px;
 }
-
+footer .items .center .address i {
+  color: rgb(219, 158, 45);
+}
 footer .items .center .phone {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+footer .items .center .phone i {
+  color: rgb(219, 158, 45);
+}
 footer .items .center .mail {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+footer .items .center .mail i {
+  color: rgb(219, 158, 45);
 }
 footer .items .right .icon {
   margin-top: 10px;
