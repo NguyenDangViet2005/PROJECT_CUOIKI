@@ -104,31 +104,35 @@
   <body>
     <header>
       <div class="main-content">
-        <div class="nav">
+        <nav>
           <div class="logo">
-            <a href="" class="icon"
+            <a href="#" class="icon"
               ><img src="../assets/img/logo.png" alt=""
             /></a>
             <p>Dream Homes</p>
           </div>
           <ul class="item">
-            <li><a href="../index.html">Trang chủ</a></li>
-            <li><a href="">Thông tin</a></li>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="./htmls/infor.html" target="_blank">Thông tin</a></li>
             <li class="menu" id="menu">
               <a href="#">Danh mục</a>
               <div class="sub-menu-wrap" id="submenu">
                 <div class="sub-menu">
+                  <a href="../index.html#model">Sản phẩm nổi bật</a>
                   <a href="../index.html#other-projects">Dự án</a>
                   <a href="../index.html#engineer">Kỹ sư</a>
                   <a href="../index.html#tech">Công nghệ</a>
-                  <a href="../index.html#review">Đánh giá</a>
                 </div>
               </div>
             </li>
-            <li><a class="nav-btn" href="">Liên hệ</a></li>
+            <li>
+              <a class="nav-btn" href="./htmls/lienhe.html" target="_blank"
+                >Hỗ trợ</a
+              >
+            </li>
           </ul>
-        </div>
-        <div class="model-top-left">
+        </nav>
+        <div class="model">
           <img src="../assets/img/model-center-right.png" alt="" />
         </div>
       </div>
@@ -302,12 +306,13 @@
       </div>
     </main>
     <footer>
+      <img src="../assets/img/footerB.jpg" alt="" />
       <div class="main-content">
         <div class="items">
           <div class="left">
             <div class="label">
               <img src="../assets/img/logo.png" alt="" />
-              <p>Dream Homes</p>
+              <p style="color: orange">Dream Homes</p>
             </div>
             <p class="desc">
               Dream Homes - sự lựa chọn tốt nhất giành cho bạn, sự hài lòng của
@@ -319,7 +324,7 @@
             <div class="contact-me">
               <div class="address">
                 <i class="fa-solid fa-location-dot"></i>
-                <address>Dream home villas San Diego, CA, USA</address>
+                <address>Dream Home villas San Diego, CA, USA</address>
               </div>
               <div class="phone">
                 <i class="fa-solid fa-phone-volume"></i>
@@ -335,19 +340,19 @@
             <h2>Theo dõi chúng tôi</h2>
             <div class="icon">
               <a href="https://www.instagram.com/" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
+                ><i class="fa-brands fa-instagram" id="instagram"></i
               ></a>
               <a href="https://www.facebook.com/" target="_blank"
-                ><i class="fa-brands fa-facebook"></i
+                ><i class="fa-brands fa-facebook" id="facebook"></i
               ></a>
               <a href="https://twitter.com/" target="_blank"
-                ><i class="fa-brands fa-twitter"></i
+                ><i class="fa-brands fa-twitter" id="twitter"></i
               ></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <script src="../js/model.js"></script>
   </body>
 </html>
