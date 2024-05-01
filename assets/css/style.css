@@ -333,7 +333,7 @@ main {
 .filter .filter-btn:hover {
   opacity: 0.6;
 }
-.model {
+#model {
   padding-top: 70px;
   display: grid;
   grid-template-columns: 400px 400px 400px;
@@ -341,7 +341,7 @@ main {
   column-gap: 34px;
   row-gap: 30px;
 }
-.model .cost {
+#model .cost {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -349,7 +349,7 @@ main {
   font-size: 2rem;
 }
 
-.model .cost .view-details {
+#model .cost .view-details {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,16 +363,16 @@ main {
   cursor: pointer;
   transition-duration: 0.5s;
 }
-.model .cost .view-details:hover {
+#model .cost .view-details:hover {
   opacity: 0.6;
 }
-.model .condition {
+#model .condition {
   padding: 5px 10px;
   display: flex;
 }
-.model .condition .bed:hover,
-.model .condition .bath:hover,
-.model .condition .dientich:hover {
+#model .condition .bed:hover,
+#model .condition .bath:hover,
+#model .condition .dientich:hover {
   border: 2px solid #fff;
   cursor: pointer;
 }
@@ -383,7 +383,7 @@ main {
   align-items: center;
   gap: 10px;
 }
-.model .condition > * {
+#model .condition > * {
   font-size: 1rem;
   display: flex;
   justify-content: center;

@@ -9,7 +9,7 @@ menu.addEventListener("click", function () {
 var viewmoreBtn = document.querySelector(".view-more");
 var currentBox = 9;
 viewmoreBtn.onclick = function () {
-  let boxes = [...document.querySelectorAll(".model .box-model")];
+  let boxes = [...document.querySelectorAll("#model .box-model")];
   for (var i = currentBox; i < currentBox + 3; i++) {
     boxes[i].style.display = "inline-block";
   }
