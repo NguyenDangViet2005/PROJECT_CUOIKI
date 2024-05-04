@@ -528,7 +528,7 @@
   }
   footer {
     height: 600px;
-    padding-top: 100px;
+    padding: 100px 0;
   }
   footer .main-content {
     height: 600px;
