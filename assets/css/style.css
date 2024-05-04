@@ -962,6 +962,10 @@ main {
 .card .getInfor {
   position: relative;
 }
+.card .getInfor input::placeholder,
+.card .getInfor textarea::placeholder {
+  color: transparent;
+}
 .card .getInfor input,
 .card .getInfor select {
   font-size: 2rem;

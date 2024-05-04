@@ -99,6 +99,8 @@
     />
     <!-- file style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- file responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <title>Dream Homes - Ngôi nhà trong mơ</title>
   </head>
   <body>
@@ -117,7 +119,7 @@
             /></a>
             <p>Dream Homes</p>
           </div>
-          <ul class="item">
+          <ul class="item" id="nav-pc">
             <li><a href="#">Trang chủ</a></li>
             <li><a href="./htmls/infor.html" target="_blank">Thông tin</a></li>
             <li class="menu" id="menu">
@@ -149,6 +151,46 @@
         <div class="blur-bottom"></div>
       </div>
     </header>
+    <!-- tablet/mobile -->
+    <div class="mobile-header">
+      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" hidden />
+      <label for="menu-checkbox">
+        <svg
+          class="menu-header-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentcolor"
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </label>
+      <!-- phần overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+      <!-- menu drawer -->
+      <div class="menu-drawer">
+        <div class="logo-drawer">
+          <a href="#" class="icon"
+            ><img src="./assets/img/logo.png" alt=""
+          /></a>
+          <p>Dream Homes</p>
+        </div>
+        <ul id="nav-mobile">
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="./htmls/infor.html" target="_blank">Thông tin</a></li>
+          <li><a href="#model">Sản phẩm nổi bật</a></li>
+          <li><a href="#other-projects">Dự án</a></li>
+          <li><a href="#engineer">Kỹ sư</a></li>
+          <li><a href="#tech">Công nghệ</a></li>
+          <li>
+            <a class="nav-btn" href="./htmls/lienhe.html" target="_blank"
+              >Hỗ trợ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     <main>
       <div class="main-content">
         <section class="mission">
@@ -1154,12 +1196,27 @@
           </div>
           <div class="getInfor">
             <form action="">
-              <input type="text" name="name" id="name" placeholder=" " />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Tên của bạn"
+              />
               <label for="name" class="name-lb">Tên của bạn</label>
-              <input type="email" name="email" id="email" placeholder=" " />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email của bạn"
+              />
               <label for="email" class="email-lb">Email của bạn</label>
               <br />
-              <input type="tel" name="tel" id="tel" placeholder=" " />
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Số điện thoại"
+              />
               <label for="tel" class="tel-lb">Số điện thoại</label>
               <br />
               <textarea
@@ -1167,7 +1224,7 @@
                 id="yourMessage"
                 cols="41"
                 rows="10"
-                placeholder=" "
+                placeholder="Nhận xét về chúng tôi"
               ></textarea>
               <label for="yourMessage" class="msg-lb"
                 >Nhận xét về chúng tôi</label
