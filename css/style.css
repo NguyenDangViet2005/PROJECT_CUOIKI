@@ -186,7 +186,7 @@ main {
 /* phần mission */
 .mission {
   margin: 0 -123px;
-  background-image: url(../img/missionB.jpeg);
+  background-image: url(../src/img/missionB.jpeg);
   background-size: cover;
   height: 600px;
   position: relative;
