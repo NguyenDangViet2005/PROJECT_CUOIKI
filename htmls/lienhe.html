@@ -1,63 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../src/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../src/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../src/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../src/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../src/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../src/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../src/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../src/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../src/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../src/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../src/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../src/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../src/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <!-- style -->
-    <link rel="stylesheet" href="../assets/css/lienhe.css">
+    <link rel="stylesheet" href="../css/lienhe.css" />
     <title>Liên hệ - Hỗ trợ 24/7</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>TRANG HỖ TRỢ KHÁCH HÀNG</h1>
     <form action="" method="post">
-        <label for="name">Tên Khách Hàng:</label><br><br>
-        <input type="text" name="name" id="name" placeholder="Mời nhập tên của bạn">
-        <br><br>
-        <div class="infor">
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="YourEmail@gmail.com">
-            </div>
-    
-            <div>
-                <label for="sdt">Số Điện thoại:</label>
-                <input type="tel" name="sdt" id="sdt" placeholder="Số Điện thoại">
-            </div>
+      <label for="name">Tên Khách Hàng:</label><br /><br />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Mời nhập tên của bạn"
+      />
+      <br /><br />
+      <div class="infor">
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="YourEmail@gmail.com"
+          />
         </div>
-        <br>
-        <label for="">Quốc gia:</label>
-        <select >
-            <option value="">Việt Nam</option>
-            <option value="">Mỹ</option>
-            <option value="">Hàn Quốc</option>
-            <option value="">Hàn Quốc</option>
-            <option value="">Nhật Bản</option>
-            <option value="">Trung Quốc</option>
-        </select>
-        <br>
-        <br> 
-        <label for="message">Vấn đề của bạn:</label><br><br>
-        <textarea name="message" id="message" cols="30" rows="10" ></textarea>
 
-        <input type="submit" value="Gửi" d="btn">
+        <div>
+          <label for="sdt">Số Điện thoại:</label>
+          <input type="tel" name="sdt" id="sdt" placeholder="Số Điện thoại" />
+        </div>
+      </div>
+      <br />
+      <label for="">Quốc gia:</label>
+      <select>
+        <option value="">Việt Nam</option>
+        <option value="">Mỹ</option>
+        <option value="">Hàn Quốc</option>
+        <option value="">Hàn Quốc</option>
+        <option value="">Nhật Bản</option>
+        <option value="">Trung Quốc</option>
+      </select>
+      <br />
+      <br />
+      <label for="message">Vấn đề của bạn:</label><br /><br />
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+      <input type="submit" value="Gửi" d="btn" />
     </form>
-</body>
+  </body>
 </html>

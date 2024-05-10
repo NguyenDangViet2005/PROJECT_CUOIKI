@@ -290,6 +290,7 @@ footer .items .right .icon i {
 }
 #facebook {
   transition-duration: 0.5s;
+  color: #fff;
 }
 #facebook:hover {
   color: rgb(79, 187, 242);
@@ -297,6 +298,7 @@ footer .items .right .icon i {
 }
 #instagram {
   transition-duration: 0.5s;
+  color: #fff;
 }
 #instagram:hover {
   background-image: linear-gradient(#833ab4, #fd1d1d, #fcb045);
@@ -307,6 +309,7 @@ footer .items .right .icon i {
 }
 #twitter {
   transition-duration: 0.5s;
+  color: #fff;
 }
 #twitter:hover {
   color: rgb(128, 133, 136);

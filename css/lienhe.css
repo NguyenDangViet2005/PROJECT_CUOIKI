@@ -1,5 +1,5 @@
 html {
-  background-image: url(../img/background.jpeg);
+  background-image: url(../src/img/background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
