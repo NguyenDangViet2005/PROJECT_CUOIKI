@@ -53,6 +53,7 @@ video {
   height: 100%;
   margin: 0 auto;
   position: absolute;
+  object-fit: cover;
   top: 0;
   left: 0;
   z-index: -1;

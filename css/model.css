@@ -22,20 +22,30 @@ a {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 .title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   color: orange;
   padding: 50px 0;
+  text-align: center;
 }
 /* phần header */
 header {
   width: 100%;
-  height: 860px;
+  height: 100vh;
   position: relative;
+}
+header .header-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  object-fit: cover;
 }
 
 nav {
-  margin: 0 -123px;
+  margin: 0 -124.5px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -149,13 +159,23 @@ nav {
   letter-spacing: 3px;
   bottom: 230px;
 }
+.desc-fast {
+  width: 100%;
+  font-size: 1.7rem;
+  line-height: 1.4;
+  margin: 0 auto;
+}
 /* infor */
 .infor {
-  padding: 20px 135px;
+  font-size: 3rem;
+}
+
+.infor img {
+  width: 50px;
 }
 .infor .cost {
   padding: 30px 0;
-  font-size: 3rem;
+  font-size: 5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -166,11 +186,29 @@ nav {
 }
 .condition {
   display: flex;
-  gap: 40px;
+  align-items: center;
   color: #8c8585;
+  justify-content: space-between;
+}
+
+.condition .bath,
+.condition .bed,
+.condition .dientich {
+  border: 2px solid #8c8585;
+  width: 33.33%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.condition .bath:hover,
+.condition .bed:hover,
+.condition .dientich:hover {
+  border: 2px solid orange;
 }
 .buy {
-  width: 100px;
+  font-weight: 600;
+  width: 200px;
   height: 50px;
   background-color: #fff;
   color: black;
@@ -178,7 +216,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0;
+  margin: 30px 0 15px;
   transition-duration: 0.5s;
   cursor: pointer;
 }
@@ -186,9 +224,7 @@ nav {
   opacity: 0.6;
 }
 /* phần feature */
-.features {
-  padding: 0 135px;
-}
+
 .features .feature-items {
   display: flex;
   justify-content: space-evenly;
@@ -199,6 +235,10 @@ nav {
   text-align: center;
   width: 150px;
   height: 150px;
+  transition: 0.5s;
+}
+.features .feature-items div:hover {
+  transform: translateY(-10px);
 }
 .features .feature-items p {
   font-size: 0.9rem;
@@ -206,52 +246,62 @@ nav {
   color: #8a8484;
 }
 
-/* phần details */
-.details {
-  padding: 0 135px;
+/* phần Furniture */
+.furniture {
+  height: 700px;
+  width: 100%;
 }
 
-.details-bottom {
+.furniture .slide-furniture {
+  width: 100%;
+  height: 400px;
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
-.details-left {
-  width: 50%;
-  height: 100%;
-  height: 100%;
+.furniture-item {
+  width: 400px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  flex-shrink: 0;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: 1s;
+  position: absolute;
 }
-.details-left > img {
-  width: 99%;
-  height: 50%;
-  margin-bottom: 5px;
+.furniture-item:nth-child(1) {
+  transform: translateX(-105%);
 }
-.details-left .details-left-bottom {
-  display: flex;
-  gap: 5px;
+.furniture-item:nth-child(2) {
+  transform: translateX(0%);
+  background-position: 10% 50%;
 }
-.details-left .details-left-bottom img {
-  width: 49%;
-  height: 50%;
+.furniture-item:nth-child(3) {
+  transform: translateX(105%);
+  background-position: 50% 50%;
 }
-.details-right {
-  display: flex;
-  width: 50%;
-  gap: 5px;
+
+.furniture-item:nth-child(4) {
+  transform: translateX(210%);
+  background-position: 90% 50%;
 }
-.details-right > img {
-  width: 50%;
-  height: 99%;
+.furniture-item:nth-child(5) {
+  transform: translateX(315%);
+  background-position: 100% 50%;
 }
-.detail-right-right {
-  width: 50%;
+.furniture-item:nth-child(6) {
+  transform: translateX(420%);
 }
-.detail-right-right img:first-child {
-  height: 60%;
-  width: 99%;
+.furniture .furniture-desc {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  line-height: 1.25;
 }
-.detail-right-right img:last-child {
-  height: 38%;
-  width: 99%;
-}
+
 /* phần neighborhood */
 .neighborhood {
   margin-top: 60px;
@@ -261,8 +311,9 @@ nav {
 }
 
 .neighborhood .location {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 0 0 30px;
+  text-align: center;
 }
 .map-img {
   width: 1170px;

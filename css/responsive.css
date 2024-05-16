@@ -468,6 +468,15 @@
   }
   main #engineer .box-engineer {
     height: 100%;
+    animation: slide-run 20s linear infinite;
+  }
+  @keyframes slide-run {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-1300px);
+    }
   }
   main #tech {
     width: 100%;
