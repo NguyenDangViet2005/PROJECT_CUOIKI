@@ -32,7 +32,7 @@ header {
   width: 1440px;
   margin: 0 auto;
 }
-.nav {
+nav {
   margin: 0 -85px;
   position: relative;
   display: flex;

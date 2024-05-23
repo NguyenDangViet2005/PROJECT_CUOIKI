@@ -1,0 +1,223 @@
+/* PC */
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+/* Tablet and mobile*/
+@media (max-width: 991.98px) {
+  * {
+    text-align: justify;
+  }
+  header {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  header .item {
+    display: none;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .logo {
+    display: none;
+  }
+  .menu-header-icon {
+    width: 40px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    color: #1b1a1a;
+  }
+  hr {
+    display: none;
+  }
+  .menu-overlay {
+    position: fixed;
+    background-color: rgba(64, 59, 59, 0.493);
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  #menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-drawer {
+    position: fixed;
+    background-color: rgb(81, 78, 78);
+    inset: 0 60% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.4s;
+  }
+  .menu-drawer p {
+    color: #fff;
+    text-align: center;
+  }
+  #menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  .menu-drawer .logo-drawer {
+    text-align: center;
+    padding-top: 20px;
+  }
+  #nav-mobile {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu-drawer #nav-mobile li {
+    font-size: 3rem;
+    margin: 30px 0;
+  }
+  .menu-drawer #nav-mobile a {
+    color: #fff;
+  }
+  .menu-drawer #nav-mobile .nav-btn {
+    color: #000;
+  }
+  .main-content {
+    width: 95%;
+    margin: 0 auto;
+  }
+  header nav {
+    display: none;
+  }
+  main img {
+    object-fit: cover;
+    height: 80%;
+  }
+  footer .items .left .label {
+    margin: 0 auto;
+  }
+  footer .items .left .desc {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  footer .items .center h2 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  footer .items .center .contact-me {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .items .center .contact-me > * {
+    width: 100%;
+  }
+  footer .items .center .mail p {
+    width: 87%;
+    word-wrap: break-word;
+  }
+  footer .items .right h2 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  * {
+    text-align: justify;
+    margin: 0 20px;
+  }
+  header .item {
+    display: none;
+  }
+
+  .model img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .logo {
+    display: none;
+  }
+  .menu-header-icon {
+    width: 20px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    color: #1b1a1a;
+  }
+  .menu-overlay {
+    position: fixed;
+    background-color: rgba(64, 59, 59, 0.493);
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  #menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-drawer {
+    position: fixed;
+    background-color: rgb(81, 78, 78);
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.4s;
+  }
+  #menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  .menu-drawer .logo-drawer {
+    text-align: center;
+    padding-top: 20px;
+  }
+  #nav-mobile {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu-drawer #nav-mobile li {
+    font-size: 3rem;
+    margin: 30px 0;
+  }
+  .menu-drawer #nav-mobile li a {
+    font-size: 2rem;
+  }
+  header .main-content nav {
+    width: 100%;
+    background: transparent;
+    margin: 0;
+  }
+  .main-content {
+    width: 100%;
+    overflow: hidden;
+  }
+  main .img-desc {
+    font-size: 1rem;
+  }
+  footer {
+    height: 500px;
+    padding: 100px 0;
+  }
+  footer .main-content {
+    height: 500px;
+  }
+  footer .items {
+    flex-direction: column;
+    width: 100%;
+  }
+  footer .items > div {
+    width: 90%;
+  }
+  footer .items .left * {
+    margin: 0 auto;
+  }
+  footer .items p,
+  footer .items .address,
+  footer .items .left .desc {
+    font-size: 1.5rem;
+  }
+  footer .items h2 {
+    font-size: 2rem;
+  }
+  footer .items .right .mail p {
+    width: 87%;
+    word-wrap: break-word;
+  }
+}

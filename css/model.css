@@ -31,8 +31,9 @@ a {
 /* phần header */
 header {
   width: 100%;
-  height: 100vh;
+  height: 600px;
   position: relative;
+  margin-bottom: 100px;
 }
 header .header-background {
   width: 100%;
@@ -78,7 +79,7 @@ nav {
 }
 .model img {
   width: 100%;
-  height: 650px;
+  height: 100%;
   object-fit: cover;
 }
 /* dropdown */
