@@ -465,8 +465,7 @@
 
   main #other-projects .slider .list img {
     width: 100vw;
-    height: 300px;
-    margin-top: 25%;
+    height: 90%;
   }
   main #other-projects .infor .desc {
     width: 80%;
@@ -494,30 +493,35 @@
   main #tech {
     width: 100%;
   }
-  main #tech .tech-item:nth-child(3),
-  main #tech .tech-item:nth-child(4),
-  main #tech .tech-item:nth-child(5) {
-    display: none;
-  }
-  /* main #tech .tech-item {
+  main #tech .tech-item {
     width: 100px;
     height: 80px;
     border-radius: 10px;
   }
   main #tech .tech-item:nth-child(3) {
-    transform: translate(-200%, 160%);
+    transform: translate(-160%, 50%);
   }
   main #tech .tech-item:nth-child(4) {
-    transform: translate(-300%, 160%);
+    transform: translate(-270%, 50%);
+    display: inline-block;
   }
   main #tech .tech-item:nth-child(5) {
-    transform: translate(-300%, 160%);
-  } */
+    transform: translate(-380%, 50%);
+    display: inline-block;
+  }
 
   main #tech .tech-item .tech-content {
+    width: 70%;
+    height: 40%;
+    top: 25%;
     left: 15%;
-    top: 40%;
+    font-size: 1rem;
   }
+  main #tech .tech-item .tech-content .tech-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+
   main .reasons {
     width: 100%;
     margin: 0;
