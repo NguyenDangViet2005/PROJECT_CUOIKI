@@ -91,6 +91,9 @@
   .map-img {
     width: 100%;
   }
+  main .neighborhood .services {
+    display: none;
+  }
   .services {
     width: 100%;
     margin: 0;
@@ -214,7 +217,7 @@
     width: 30px;
   }
   .condition {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .condition img {
     width: 20px;
@@ -252,16 +255,19 @@
   .map-img {
     width: 100%;
   }
+  main .neighborhood .services {
+    display: none;
+  }
   .services {
     width: 100%;
     margin: 0;
   }
   footer {
-    height: 500px;
+    height: 700px;
     padding: 100px 0;
   }
   footer .main-content {
-    height: 500px;
+    height: 600px;
   }
   footer .items {
     flex-direction: column;
