@@ -69,7 +69,7 @@
     margin: 0 auto;
   }
   .menu-drawer #nav-mobile li {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 30px 0;
   }
   .menu-drawer #nav-mobile a {
@@ -173,10 +173,7 @@
     margin: 0 auto;
   }
   .menu-drawer #nav-mobile li {
-    font-size: 3rem;
     margin: 30px 0;
-  }
-  .menu-drawer #nav-mobile li a {
     font-size: 2rem;
   }
   header .main-content nav {
