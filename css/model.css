@@ -13,7 +13,7 @@ body {
 }
 .main-content {
   width: 1270px;
-  max-width: calc(100%-48px);
+  max-width: calc(100% - 48px);
   margin: 0 auto;
 }
 a {
@@ -192,9 +192,7 @@ nav {
   justify-content: space-between;
 }
 
-.condition .bath,
-.condition .bed,
-.condition .dientich {
+.condition > div {
   border: 2px solid #8c8585;
   width: 33.33%;
   height: 50px;
@@ -202,10 +200,9 @@ nav {
   align-items: center;
   justify-content: space-evenly;
 }
-.condition .bath:hover,
-.condition .bed:hover,
-.condition .dientich:hover {
+.condition > div:hover {
   border: 2px solid orange;
+  color: orange;
 }
 .buy {
   font-weight: 600;
@@ -413,22 +410,17 @@ footer .items .center .address {
 footer .items .center .address i {
   color: rgb(219, 158, 45);
 }
-footer .items .center .phone {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-footer .items .center .phone i {
-  color: rgb(219, 158, 45);
-}
+footer .items .center .phone,
 footer .items .center .mail {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+footer .items .center .phone i,
 footer .items .center .mail i {
   color: rgb(219, 158, 45);
 }
+
 footer .items .right .icon {
   margin-top: 10px;
   display: flex;
@@ -439,16 +431,16 @@ footer .items .right .icon {
 footer .items .right .icon i {
   font-size: 4rem;
 }
-#facebook {
+#facebook,
+#instagram,
+#twitter {
   transition-duration: 0.5s;
 }
 #facebook:hover {
   color: rgb(79, 187, 242);
   cursor: pointer;
 }
-#instagram {
-  transition-duration: 0.5s;
-}
+
 #instagram:hover {
   background-image: linear-gradient(#833ab4, #fd1d1d, #fcb045);
   color: transparent;
@@ -456,10 +448,9 @@ footer .items .right .icon i {
   -webkit-background-clip: text;
   cursor: pointer;
 }
-#twitter {
-  transition-duration: 0.5s;
-}
+
 #twitter:hover {
   color: rgb(128, 133, 136);
   cursor: pointer;
 }
+/* nguyễn đăng việt */

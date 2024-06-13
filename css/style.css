@@ -27,13 +27,12 @@ body > a:hover {
 }
 .main-content {
   width: 1270px;
-  max-width: calc(100%-48px);
+  max-width: calc(100% - 48px);
   margin: 0 auto;
 }
 a {
   text-decoration: none;
   color: #fff;
-  font-family: "Be Vietnam Pro", sans-serif;
 }
 .title {
   font-size: 4rem;
@@ -129,12 +128,6 @@ nav {
 
 .sub-menu-wrap.open {
   height: 200px;
-}
-
-.sub-menu a {
-  color: white;
-  text-decoration: none;
-  display: block;
 }
 .sub-menu {
   display: flex;
@@ -309,7 +302,7 @@ main {
   width: 700px;
   height: 500px;
 }
-/* phần product */
+/* phần model */
 
 .filter {
   display: flex;
@@ -385,20 +378,16 @@ main {
   padding: 5px 10px;
   display: flex;
 }
-#model .condition .bed:hover,
-#model .condition .bath:hover,
-#model .condition .dientich:hover {
+#model .condition > div:hover {
   border: 2px solid #fff;
   cursor: pointer;
 }
 
 .bed,
 .bath {
-  display: flex;
-  align-items: center;
   gap: 10px;
 }
-#model .condition > * {
+#model .condition > div {
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -428,13 +417,9 @@ main {
   background: #2c2b2b;
   border-radius: 10px;
   padding-bottom: 20px;
+  overflow: hidden;
 }
-.box-model:nth-child(10),
-.box-model:nth-child(11),
-.box-model:nth-child(12),
-.box-model:nth-child(13),
-.box-model:nth-child(14),
-.box-model:nth-child(15) {
+.box-model:nth-child(n + 10) {
   display: none;
 }
 
@@ -452,14 +437,12 @@ main {
   position: absolute;
   width: 100px;
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s linear 0.2s;
   color: #695f5f;
 }
 
-.view-more:hover .view-more-text {
+.view-more-btn:hover + .view-more-text {
   opacity: 1;
 }
 .view-more-btn {
@@ -519,13 +502,12 @@ main {
 }
 /* phần about us */
 .about-us {
-  margin: 100px 0;
+  margin: 100px 0 100px -85px;
   position: relative;
   background-image: url(../src/img/city.png);
   background-repeat: no-repeat;
   width: 1440px;
   height: 600px;
-  margin-left: -85px;
 }
 .about-us::before {
   content: "";
@@ -618,7 +600,6 @@ main {
   display: flex;
   justify-content: space-between;
 }
-/* phần other projects */
 /* phần slider */
 .slider {
   height: 500px;
@@ -667,6 +648,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 20px;
+  cursor: pointer;
 }
 .dots li {
   list-style-type: none;
@@ -777,10 +759,8 @@ main {
   text-align: center;
 }
 #tech #tech-slide {
-  width: 1000px;
   height: 650px;
   width: max-content;
-  background-color: #fff;
   overflow: hidden;
 }
 #tech .tech-item {
@@ -826,7 +806,6 @@ main {
   top: 60%;
   left: 100px;
   width: 300px;
-  text-align: left;
   font-size: 1.5rem;
   display: none;
   transform: translate(0, -50%);
@@ -836,7 +815,6 @@ main {
 }
 #tech .tech-item:nth-child(2) .tech-content {
   display: block;
-  z-index: 2;
 }
 #tech .tech-item .tech-name {
   text-transform: uppercase;
@@ -981,8 +959,7 @@ main {
 .card .getInfor textarea::placeholder {
   color: transparent;
 }
-.card .getInfor input,
-.card .getInfor select {
+.card .getInfor input {
   font-size: 2rem;
   height: 40px;
   width: 250px;
@@ -995,7 +972,6 @@ main {
 }
 .card .getInfor label {
   color: #787777;
-  user-select: none;
   pointer-events: none;
 }
 .card .getInfor .name-lb {
@@ -1132,22 +1108,17 @@ footer .items .center .address {
 footer .items .center .address i {
   color: rgb(219, 158, 45);
 }
-footer .items .center .phone {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-footer .items .center .phone i {
-  color: rgb(219, 158, 45);
-}
+footer .items .center .phone,
 footer .items .center .mail {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+footer .items .center .phone i,
 footer .items .center .mail i {
   color: rgb(219, 158, 45);
 }
+
 footer .items .right .icon {
   margin-top: 10px;
   display: flex;
@@ -1158,16 +1129,16 @@ footer .items .right .icon {
 footer .items .right .icon i {
   font-size: 4rem;
 }
-#facebook {
+#facebook,
+#instagram,
+#twitter {
   transition-duration: 0.5s;
 }
 #facebook:hover {
   color: rgb(79, 187, 242);
   cursor: pointer;
 }
-#instagram {
-  transition-duration: 0.5s;
-}
+
 #instagram:hover {
   background-image: linear-gradient(#833ab4, #fd1d1d, #fcb045);
   color: transparent;
@@ -1175,10 +1146,9 @@ footer .items .right .icon i {
   -webkit-background-clip: text;
   cursor: pointer;
 }
-#twitter {
-  transition-duration: 0.5s;
-}
+
 #twitter:hover {
   color: rgb(128, 133, 136);
   cursor: pointer;
 }
+/* Nguyễn Đăng Việt */
